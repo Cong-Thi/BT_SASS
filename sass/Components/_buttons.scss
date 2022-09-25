@@ -1,0 +1,14 @@
+.btn__purple{
+    @include styleText($fs-1,$fw-6,$color-white);
+    @include styleButton($color-purple, $pd-5, $pd-10, $bd-0,30px);
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0 0 0 3em $color-purple inset; 
+    box-shadow: 0 0 0 3em $color-purple inset;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-white;
+        color: $color-purple;
+        box-shadow: 0 0 0 1px $color-purple inset; 
+    }
+}

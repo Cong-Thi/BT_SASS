@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.btn__purple {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #b61984;
+  padding: 5px 10px;
+  border: 0px;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.5s;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  cursor: pointer;
+}
+.btn__purple:hover {
+  background-color: #ffffff;
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+@media (max-width: 992px) {
+  #site-header {
+    background-color: #ffffff;
+  }
+  #site-header .navbar {
+    justify-content: left;
+  }
+  #site-header .navbar img {
+    width: 40px;
+  }
+  #site-header .navbar .navbar-toggler {
+    border: none;
+  }
+  #site-header .navbar .navbar-collapse {
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  #site-header .navbar .navbar-collapse .navbar__menu .nav__item__menu::after {
+    display: none !important;
+  }
+  #site-header .navbar .navbar-collapse .navbar__collapse__info {
+    display: grid !important;
+    justify-items: center;
+  }
+  .nav-fixed img {
+    display: block;
+  }
+}
+.nav-fixed {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+}
+
+.nav-fixed img {
+  display: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .navbar__collapse__menu {
+  justify-content: right;
+}
+header .navbar .navbar__collapse__menu .navbar__menu {
+  text-decoration: none;
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu {
+  padding: 0 25px;
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  background-color: #b61984;
+  opacity: 0;
+  transition: all 0.05s;
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu.active::after {
+  opacity: 1;
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu:hover::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  transition: all 0.05s;
+}
+header .navbar .navbar__collapse__menu .navbar__menu .nav__item__menu a:hover {
+  color: #b61984;
+  text-decoration: none;
+}
+header .navbar .navbar__collapse__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .navbar__collapse__info .navbar__info {
+  display: flex;
+}
+header .navbar .navbar__collapse__info .navbar__info .navbar__item__info {
+  padding: 0 5px;
+}
+header .navbar .navbar__collapse__info .navbar__info a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  transition: all 0.05s;
+}
+header .navbar .navbar__collapse__info .navbar__info a:hover {
+  color: #b61984;
+}
+
+#about {
+  background-image: url(../../img/yellow_top_wave_01.png), url(../../img/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: contain;
+  overflow: hidden;
+}
+#about .row__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+#about .row__about .title__about h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #b61984;
+}
+#about .row__about .title__about p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #181818;
+}
+
+#post {
+  background-color: #dcd1f0;
+  background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  overflow: hidden;
+}
+#post .card__post {
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: all 0.35s;
+}
+#post .card__post:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+#post .card__post:hover img {
+  transform: scale(1.05);
+}
+#post .card__post .card__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.35s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#post .card__post .post__content {
+  text-align: center;
+}
+#post .card__post .post__content span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b61984;
+}
+#post .card__post .post__content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #181818;
+}
+#post .card__post .post__content p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #181818;
+}
+
+footer {
+  background-color: transparent;
+  background-image: url(../../img/footer_background.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#form {
+  background-color: #ffffff;
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  overflow: hidden;
+}
+#form .form__content {
+  justify-content: center;
+  align-items: center;
+}
+#form .form__content .form__info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+#form .form__content .form__info .row {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+#form .form__content .form__info .row .form__item {
+  display: flex;
+  border: 1px solid #abb8c3;
+  border-radius: 50px;
+  align-items: center;
+  height: 50px;
+  margin: 10px 0;
+}
+#form .form__content .form__info .row .form__item .form__input {
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+}
+#form .form__content .form__info .row .form__item .form__input:focus-visible {
+  outline: none;
+}
+#form .form__content .form__info .row .btn__purple {
+  padding: 10px 0;
+}/*# sourceMappingURL=main.css.map */
