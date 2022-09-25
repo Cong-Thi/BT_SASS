@@ -11,8 +11,3 @@
     border-radius: $radius;
 }
 
-@mixin styleButtonHover($bg,$bd-color,$color) {
-    background: $bg;
-    border-color: $bd-color;
-    color: $color;
-}

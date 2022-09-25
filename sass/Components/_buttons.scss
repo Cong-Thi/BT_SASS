@@ -12,3 +12,26 @@
         box-shadow: 0 0 0 1px $color-purple inset; 
     }
 }
+.btn__white{
+    @include styleText($fs-1,$fw-6,$color-purple);
+    @include styleButton($color-white, $pd-5, $pd-10, $bd-0,30px);
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0 0 0 3em $color-white inset; 
+    box-shadow: 0 0 0 3em $color-white inset;
+    padding: $pd-15 0;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-purple;
+        color: $color-white;
+        box-shadow: 0 0 0 1px $color-white inset; 
+    }
+}
+.btn__email{
+   
+    @include styleButton($color-purple, $pd-5, $pd-10, $bd-0,30px);
+    text-align: center;
+    padding: $pd-15 0;
+    border: 1px solid $color-white;
+ 
+}
